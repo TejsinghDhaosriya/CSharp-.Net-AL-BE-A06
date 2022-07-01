@@ -1,0 +1,11 @@
+C:\Users\tej\workArea\C#.Net\WordReaderConsoleApp\WordReaderConsoleApp\bin\Debug\WordReaderConsoleApp.exe.config
+C:\Users\tej\workArea\C#.Net\WordReaderConsoleApp\WordReaderConsoleApp\bin\Debug\WordReaderConsoleApp.exe
+C:\Users\tej\workArea\C#.Net\WordReaderConsoleApp\WordReaderConsoleApp\bin\Debug\WordReaderConsoleApp.pdb
+C:\Users\tej\workArea\C#.Net\WordReaderConsoleApp\WordReaderConsoleApp\bin\Debug\WordClassLibrary.dll
+C:\Users\tej\workArea\C#.Net\WordReaderConsoleApp\WordReaderConsoleApp\bin\Debug\WordClassLibrary.pdb
+C:\Users\tej\workArea\C#.Net\WordReaderConsoleApp\WordReaderConsoleApp\obj\Debug\WordReaderConsoleApp.csproj.AssemblyReference.cache
+C:\Users\tej\workArea\C#.Net\WordReaderConsoleApp\WordReaderConsoleApp\obj\Debug\WordReaderConsoleApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\tej\workArea\C#.Net\WordReaderConsoleApp\WordReaderConsoleApp\obj\Debug\WordReaderConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\tej\workArea\C#.Net\WordReaderConsoleApp\WordReaderConsoleApp\obj\Debug\WordReaderConsoleApp.csproj.CopyComplete
+C:\Users\tej\workArea\C#.Net\WordReaderConsoleApp\WordReaderConsoleApp\obj\Debug\WordReaderConsoleApp.exe
+C:\Users\tej\workArea\C#.Net\WordReaderConsoleApp\WordReaderConsoleApp\obj\Debug\WordReaderConsoleApp.pdb

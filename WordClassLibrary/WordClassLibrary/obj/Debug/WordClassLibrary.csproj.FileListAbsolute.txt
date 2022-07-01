@@ -1,0 +1,6 @@
+C:\Users\tej\workArea\C#.Net\WordReaderConsoleApp\WordClassLibrary\WordClassLibrary\bin\Debug\WordClassLibrary.dll
+C:\Users\tej\workArea\C#.Net\WordReaderConsoleApp\WordClassLibrary\WordClassLibrary\bin\Debug\WordClassLibrary.pdb
+C:\Users\tej\workArea\C#.Net\WordReaderConsoleApp\WordClassLibrary\WordClassLibrary\obj\Debug\WordClassLibrary.csproj.AssemblyReference.cache
+C:\Users\tej\workArea\C#.Net\WordReaderConsoleApp\WordClassLibrary\WordClassLibrary\obj\Debug\WordClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\tej\workArea\C#.Net\WordReaderConsoleApp\WordClassLibrary\WordClassLibrary\obj\Debug\WordClassLibrary.dll
+C:\Users\tej\workArea\C#.Net\WordReaderConsoleApp\WordClassLibrary\WordClassLibrary\obj\Debug\WordClassLibrary.pdb
