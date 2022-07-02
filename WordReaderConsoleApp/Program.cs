@@ -7,8 +7,10 @@ namespace WordReaderConsoleApp
     {
         static void Main(string[] args)
         {
+            var instance = Event.GetInstance;
             var consoleReader = new ConsoleReader(new Console());
-            consoleReader.Run();
+
+            consoleReader.Run(instance.EventHandler,instance.EventHandler,instance.EventHandler);
         }
     }
 }
