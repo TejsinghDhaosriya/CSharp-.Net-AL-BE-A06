@@ -13,7 +13,8 @@ namespace WordClassLibrary
             _console = iConsole;
         }
 
-        public void Run()
+        public void Run(EventDelegates.OnNumber onNumberDelegateRef,
+            EventDelegates.OnWord onWordDelegateRef, EventDelegates.OnJunk onJunkDelegateRef)
         {
             while (true)
             {
@@ -23,13 +24,13 @@ namespace WordClassLibrary
                 if (string.IsNullOrEmpty(input))
                 {
                     _console.ClearScreen();
-                    _console.WriteInput("Not Word Passed Please try Again ! ");
+                    _console.WriteInput("No Word Passed Please try Again ! ");
                     continue;
                 }
 
                 if ("exit".Equals(input, StringComparison.OrdinalIgnoreCase)) return;
 
-                InputParser(input);
+                InputParser(input,onNumberDelegateRef,onWordDelegateRef,onJunkDelegateRef);
 
                 _console.WriteInput("Press any key to continue...");
                 _console.GetInput();
@@ -37,28 +38,25 @@ namespace WordClassLibrary
             }
         }
 
-        public string InputParser(string input)
+        public string InputParser(string input, EventDelegates.OnNumber onNumberDelegateRef,
+            EventDelegates.OnWord onWordDelegateRef, EventDelegates.OnJunk onJunkDelegateRe)
         {
             var r = new Regex("^[a-zA-Z0-9]*$");
-            var handle = Event.GetInstance;
             string type;
             if (input.All(char.IsDigit))
             {
-                EventDelegates.OnNumber delegateRef = handle.EventHandler;
                 type = "OnNumber";
-                delegateRef.Invoke("OnNumber called - Given string is numeric");
+                onNumberDelegateRef.Invoke("OnNumber called - Given string is numeric");
             }
             else if (r.IsMatch(input))
             {
-                EventDelegates.OnWord delegateRef = handle.EventHandler;
                 type = "OnWord";
-                delegateRef.Invoke("OnWord called - Given string is alphanumeric");
+                onWordDelegateRef.Invoke("OnWord called - Given string is alphanumeric");
             }
             else
             {
-                EventDelegates.OnJunk delegateRef = handle.EventHandler;
                 type = "OnJunk";
-                delegateRef.Invoke("OnJunk called - Given string is other");
+                onJunkDelegateRe.Invoke("OnJunk called - Given string is other");
             }
 
             return type;
