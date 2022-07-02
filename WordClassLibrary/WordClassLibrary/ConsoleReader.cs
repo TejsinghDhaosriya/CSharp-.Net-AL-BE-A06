@@ -13,12 +13,12 @@ namespace WordClassLibrary
             _console = iConsole;
         }
 
-        public string Run()
+        public void Run()
         {
             while (true)
             {
                 _console.WriteInput("Please enter word for console read , for stop please enter \'exit\'");
-                var input = _console.GetIntput();
+                var input = _console.GetInput();
 
                 if (string.IsNullOrEmpty(input))
                 {
@@ -27,11 +27,12 @@ namespace WordClassLibrary
                     continue;
                 }
 
-                if ("exit".Equals(input, StringComparison.OrdinalIgnoreCase)) return "exit";
+                if ("exit".Equals(input, StringComparison.OrdinalIgnoreCase)) return;
 
                 InputParser(input);
 
-                _console.GetIntput();
+                _console.WriteInput("Press any key to continue...");
+                _console.GetInput();
                 _console.ClearScreen();
             }
         }
@@ -39,7 +40,7 @@ namespace WordClassLibrary
         public string InputParser(string input)
         {
             var r = new Regex("^[a-zA-Z0-9]*$");
-            var handle = new Event();
+            var handle = Event.GetInstance;
             string type;
             if (input.All(char.IsDigit))
             {

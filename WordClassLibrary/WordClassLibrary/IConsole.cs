@@ -3,7 +3,7 @@ namespace WordClassLibrary
 {
     public interface IConsole
     {
-        string GetIntput();
+        string GetInput();
 
         void WriteInput(string data);
 
