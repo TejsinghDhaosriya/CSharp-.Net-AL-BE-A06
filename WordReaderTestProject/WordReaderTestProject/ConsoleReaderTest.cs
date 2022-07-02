@@ -75,9 +75,30 @@ public class ConsoleReaderTest
     }
 
     [Fact]
+    public void ShouldContinueRunConsoleReaderWhenNoInputIsPassed()
+    {
+        var consoleStub = new ConsoleStub
+        {
+            Input = null
+        };
+        var console = new ConsoleReader(consoleStub);
+        console.Run();
+
+        Assert.Equal(3,consoleStub.CountWriteInput);
+        Assert.True(consoleStub.IsScreenClear);
+    }
+
+    [Fact]
     public void ShouldRunConsoleReaderWithoutAnyError()
     {
-        var console = new ConsoleReader(new ConsoleStub());
+
+        var consoleStub = new ConsoleStub
+        {
+            Input = "abc"
+        };
+        var console = new ConsoleReader(consoleStub);
         console.Run();
+        Assert.Equal(3, consoleStub.CountWriteInput);
+        Assert.True(consoleStub.IsScreenClear);
     }
 }
