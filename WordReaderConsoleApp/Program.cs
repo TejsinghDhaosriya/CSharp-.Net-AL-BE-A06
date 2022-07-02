@@ -7,7 +7,7 @@ namespace WordReaderConsoleApp
     {
         static void Main(string[] args)
         {
-            var consoleReader = new ConsoleReader();
+            var consoleReader = new ConsoleReader(new Console());
             consoleReader.Run();
         }
     }

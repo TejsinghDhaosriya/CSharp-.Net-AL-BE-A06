@@ -1,4 +1,4 @@
-﻿using System;
+﻿using static System.Console;
 
 namespace WordClassLibrary
 {
@@ -9,7 +9,7 @@ namespace WordClassLibrary
 
         public void EventHandler(string msg)
         {
-            Console.WriteLine(msg);
+            WriteLine(msg);
         }
     }
 }
